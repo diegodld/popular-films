@@ -19,10 +19,20 @@
   gap: 0.5rem;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+}
+
 li {
   list-style: none;
 }
 
 a {
   text-decoration: none;
+  color: white;
+}
+
+img {
+  fill: white;
 }

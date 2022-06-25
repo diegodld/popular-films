@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../../img/play.svg";
 import "./header.css";
 
 export default function Header() {
@@ -6,21 +7,22 @@ export default function Header() {
     <header className="header">
       <div>
         <nav>
+          <img src={logo} alt="logo" width={30} />
           <ul className="header-ul">
             <li>
-              <a>Inicio</a>
+              <a href="#">Inicio</a>
             </li>
             <li>
-              <a>Pesquisa</a>
+              <a href="#">Pesquisa</a>
             </li>
             <li>
-              <a>Minha Lista</a>
+              <a href="#">Minha Lista</a>
             </li>
             <li>
-              <a>Filmes</a>
+              <a href="#">Filmes</a>
             </li>
             <li>
-              <a>Séries</a>
+              <a href="#">Séries</a>
             </li>
           </ul>
         </nav>
