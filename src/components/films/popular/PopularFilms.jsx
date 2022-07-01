@@ -1,16 +1,17 @@
 import React from "react";
 import FilmList from "../../list/FilmList";
-import { popularUrl, baseImgUrl } from "../../../utils/ApiUrl";
+import { apiKey, baseImgUrl, baseUrl } from "../../../utils/ApiUrl";
 import "./style.css";
 
 export default function popularFilms() {
   const [films, setFilms] = React.useState();
+  const [page, setPage] = React.useState(1);
 
   React.useEffect(() => {
-    fetch(popularUrl)
+    fetch(`${baseUrl}popular?api_key=${apiKey}&language=pt-BR&page=${page}`)
       .then((response) => response.json())
       .then((data) => setFilms(data));
-  }, []);
+  }, [page]);
 
   if (!films) return null;
 
@@ -22,10 +23,26 @@ export default function popularFilms() {
           <FilmList
             key={film.id}
             title={film.title}
-            description={film.overview}
             image={`${baseImgUrl + film.poster_path}`}
           />
         ))}
+      </div>
+      <div className="pagination">
+        <p style={{ color: "white" }}>Página {page}</p>
+        <button
+          onClick={() => {
+            setPage(page == 1 ? page : page - 1);
+          }}
+        >
+          Anterior
+        </button>
+        <button
+          onClick={() => {
+            setPage(page + 1);
+          }}
+        >
+          Próximo
+        </button>
       </div>
     </>
   );

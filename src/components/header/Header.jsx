@@ -7,6 +7,7 @@ import {
   BiFilm,
   BiTv,
 } from "react-icons/bi";
+import avatar from "../../img/avatar.jpg";
 import "./header.css";
 
 export default function Header() {
@@ -56,8 +57,10 @@ export default function Header() {
             </a>
           </li>
         </ul>
-
-        <span className="profile">Perfil</span>
+        <div className="profile">
+          <span>Perfil</span>
+          <img src={avatar} alt="avatar" />
+        </div>
       </nav>
     </header>
   );
