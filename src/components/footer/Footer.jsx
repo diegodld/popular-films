@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer>
       <p style={{ textAlign: "center", color: "white" }}>
-        Desenvolvido por: Diego Lopes
+        Desenvolvido por: Diego Lopes &copy;
       </p>
     </footer>
   );

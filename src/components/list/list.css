@@ -12,6 +12,14 @@
 .items:hover {
   transform: scale(110%);
 }
+.items a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  width: 100%;
+  text-decoration: none;
+}
 .info {
   display: flex;
   flex-grow: 1;
