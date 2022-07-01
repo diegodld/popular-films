@@ -63,7 +63,10 @@ export default function Header() {
         </ul>
         <div className="profile">
           <span>Perfil</span>
-          <img src={avatar} alt="avatar" />
+          <img
+            src="https://www.looper.com/img/gallery/ways-marvel-lied-to-you-about-moon-knight/l-intro-1648736713.jpg"
+            alt="avatar"
+          />
         </div>
       </nav>
     </header>
