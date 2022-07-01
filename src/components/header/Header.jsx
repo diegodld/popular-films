@@ -60,7 +60,7 @@ export default function Header() {
         </ul>
         <div className="profile">
           <span>Perfil</span>
-          <img src={avatar} alt="avatar" />
+          <img src= "../../img/avatar.jpg" alt="avatar" />
         </div>
       </nav>
     </header>
