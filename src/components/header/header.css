@@ -1,38 +1,41 @@
 .header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-}
-
-.header div:first-child {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin: 1rem 0px;
 }
 
 .header-ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-left: 0;
 }
 
 nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+}
+
+nav .profile {
+  display: flex;
+  float: right;
 }
 
 li {
   list-style: none;
+  display: inline-flex;
+  align-items: center;
 }
 
-a {
+li a {
   text-decoration: none;
   color: white;
+  display: flex;
+  align-items: center;
 }
 
-img {
-  fill: white;
+span {
+  color: white;
 }
