@@ -12,6 +12,7 @@
 .items:hover {
   transform: scale(110%);
 }
+
 .items a {
   display: flex;
   flex-direction: column;
@@ -20,6 +21,7 @@
   width: 100%;
   text-decoration: none;
 }
+
 .info {
   display: flex;
   flex-grow: 1;

@@ -22,6 +22,7 @@ export default function popularFilms() {
         {films["results"].map((film) => (
           <FilmList
             key={film.id}
+            id={film.id}
             title={film.title}
             image={`${baseImgUrl + film.poster_path}`}
           />

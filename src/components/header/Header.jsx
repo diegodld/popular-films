@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   BiMoviePlay,
   BiHome,
@@ -27,10 +28,10 @@ export default function Header() {
             style={{ color: "white", marginLeft: "1rem" }}
           />
           <li>
-            <a href="#">
+            <Link to="/">
               <BiHome style={icon} />
               <span>Inicio</span>
-            </a>
+            </Link>
           </li>
           <li>
             <a href="#">

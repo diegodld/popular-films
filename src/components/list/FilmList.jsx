@@ -1,17 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./list.css";
 
-export default function FilmList({ title, description, image }) {
+export default function FilmList({ title, description, image, id }) {
   return (
     <div className="items">
-      <a href="google.com">
+      <Link to={`/movie/${id}`}>
         <div className="image">
           <img src={image} alt={title} />
         </div>
         <div className="info">
           <h4 style={{ color: "white" }}>{title}</h4>
         </div>
-      </a>
+      </Link>
     </div>
   );
 }
