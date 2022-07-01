@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import {
   BiMoviePlay,
   BiHome,
@@ -8,7 +9,9 @@ import {
   BiFilm,
   BiTv,
 } from "react-icons/bi";
+
 import avatar from "../../img/avatar.jpg";
+
 import "./header.css";
 
 export default function Header() {
@@ -60,7 +63,7 @@ export default function Header() {
         </ul>
         <div className="profile">
           <span>Perfil</span>
-          <img src= "../../img/avatar.jpg" alt="avatar" />
+          <img src={avatar} alt="avatar" />
         </div>
       </nav>
     </header>
