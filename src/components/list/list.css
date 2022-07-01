@@ -1,0 +1,35 @@
+.items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 508px;
+  box-shadow: 0 1em 1em black;
+  margin-bottom: 2rem;
+  transition: 1s;
+}
+
+.items:hover {
+  transform: scale(110%);
+}
+.info {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: #001542;
+  object-fit: fill;
+  border-radius: 3px;
+  padding: 0.25rem;
+}
+
+.image img {
+  display: flex;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.image {
+  margin-top: 1rem;
+}

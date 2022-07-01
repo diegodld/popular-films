@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../../img/play.svg";
 import {
   BiMoviePlay,
   BiHome,
@@ -11,9 +10,15 @@ import {
 import "./header.css";
 
 export default function Header() {
+  const [scroll, setScroll] = React.useState(0);
+
+  window.addEventListener("scroll", function (ev) {
+    setScroll(this.scrollY);
+  });
+
   const icon = { color: "white", marginRight: "0.5rem" };
   return (
-    <header className="header">
+    <header className={`${scroll > 0 ? "header scroll" : "header"}`}>
       <nav>
         <ul className="header-ul">
           <BiMoviePlay

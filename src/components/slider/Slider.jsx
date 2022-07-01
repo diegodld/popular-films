@@ -27,14 +27,12 @@ export default function Slider() {
     return (
       <div className="slider">
         <Swiper
-          // install Swiper modules
           modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
           spaceBetween={1}
           slidesPerView={3}
           navigation
           autoplay={{ delay: 5000, disableOnInteraction: false }}
           pagination={{ clickable: true }}
-          // scrollbar={{ draggable: true }}
           onSwiper={(swiper) => console.log(swiper)}
         >
           {films["results"].map((film) => (
