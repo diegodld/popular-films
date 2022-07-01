@@ -10,8 +10,6 @@ import {
   BiTv,
 } from "react-icons/bi";
 
-import avatar from "../../img/avatar.jpg";
-
 import "./header.css";
 
 export default function Header() {
