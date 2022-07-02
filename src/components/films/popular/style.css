@@ -1,5 +1,5 @@
 .films-container {
-  max-width: 100%;
+  max-width: 1600px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -16,4 +16,8 @@
   font-size: 1rem;
   cursor: pointer;
   margin: 0.5rem;
+}
+
+.pagination button:hover {
+  background-color: #04256bfb;
 }

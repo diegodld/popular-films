@@ -29,11 +29,24 @@ export default function Slider() {
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
           spaceBetween={1}
-          slidesPerView={3}
+          slidesPerView={1}
           navigation
           autoplay={{ delay: 5000, disableOnInteraction: false }}
           pagination={{ clickable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 15,
+            },
+          }}
         >
           {films["results"].map((film) => (
             <SwiperSlide key={film.id}>
