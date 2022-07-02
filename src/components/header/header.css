@@ -34,8 +34,8 @@ nav {
 }
 
 .profile img {
-  width: 50px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -64,6 +64,9 @@ span {
 
 @media screen and (max-width: 660px) {
   .header-ul a span {
+    display: none;
+  }
+  .profile span {
     display: none;
   }
 }

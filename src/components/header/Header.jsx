@@ -25,7 +25,7 @@ export default function Header() {
       <nav>
         <ul className="header-ul">
           <BiMoviePlay
-            size={30}
+            size={20}
             style={{ color: "white", marginLeft: "1rem" }}
           />
           <li>

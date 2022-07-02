@@ -25,6 +25,11 @@
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
   font-size: 1rem;
+  padding: 0.25rem;
+}
+
+.details section {
+  margin-top: 1rem;
 }
 
 .details h1 {
