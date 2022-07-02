@@ -28,7 +28,7 @@ export default function Details() {
           <h1>{film.title}</h1>
           <span>{film.overview}</span>
           <section>
-            <h1>Genero</h1>
+            <h1>Gênero</h1>
             <span>
               {film["genres"]
                 .map((fil) => {
