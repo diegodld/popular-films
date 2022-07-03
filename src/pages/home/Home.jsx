@@ -1,6 +1,6 @@
 import React from "react";
-import Slider from "../slider/Slider";
-import PopularFilms from "../films/popular/PopularFilms";
+import Slider from "../../components/slider/Slider";
+import PopularFilms from "../../components/films/popular/PopularFilms";
 
 export default function Home() {
   return (

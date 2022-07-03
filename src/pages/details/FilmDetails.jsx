@@ -1,9 +1,9 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { baseImgOriginalUrl, baseUrl, apiKey } from "../../../utils/ApiUrl";
-import "./details.css";
+import { baseLargeImgUrl, baseUrl, apiKey } from "../../utils/ApiUrl";
+import "./FilmDetails.css";
 
-export default function Details() {
+export default function FilmDetails() {
   const { id } = useParams();
   const [film, setfilm] = React.useState();
 
@@ -20,10 +20,7 @@ export default function Details() {
   return (
     <div className="poster">
       <div className="background-image">
-        <img
-          src={`${baseImgOriginalUrl + film.backdrop_path}`}
-          alt={film.title}
-        />
+        <img src={`${baseLargeImgUrl + film.backdrop_path}`} alt={film.title} />
         <div className="details">
           <h1>{film.title}</h1>
           <span>{film.overview}</span>
