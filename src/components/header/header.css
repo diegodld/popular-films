@@ -19,6 +19,14 @@
   font-size: 1.5rem;
 }
 
+.header-ul a span {
+  transition: 0.5s;
+}
+
+.header-ul a span:hover {
+  color: #a9c1f5;
+}
+
 nav {
   max-width: 1600px;
   display: flex;
