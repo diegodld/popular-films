@@ -13,15 +13,9 @@ import {
 import "./header.css";
 
 export default function Header() {
-  const [scroll, setScroll] = React.useState(0);
-
-  window.addEventListener("scroll", function (ev) {
-    setScroll(this.scrollY);
-  });
-
   const icon = { color: "white", marginRight: "0.5rem" };
   return (
-    <header className={`${scroll > 0 ? "header scroll" : "header"}`}>
+    <header className="header">
       <nav>
         <ul className="header-ul">
           <li className="logo">

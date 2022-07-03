@@ -20,9 +20,15 @@ export default function FilmDetails() {
   if (!film) return null;
   console.log(film);
   return (
-    <div className="poster">
-      <div className="background-image">
-        <img src={`${baseLargeImgUrl + film.backdrop_path}`} alt={film.title} />
+    <div className="poster-container">
+      <div className="poster">
+        <div className="background-image">
+          <img
+            src={`${baseLargeImgUrl + film.backdrop_path}`}
+            alt={film.title}
+          />
+        </div>
+
         <div className="details-container">
           <h1>{film.title}</h1>
           <span>{film.overview}</span>
@@ -43,15 +49,15 @@ export default function FilmDetails() {
             </p>
             <p>
               <strong>Data de lançamento: </strong>
-              {dateFormat(film.release_date)}
+              {dateFormat(film.release_date)}.
             </p>
             <p>
               <strong>Título original: </strong>
-              {film.original_title}
+              {film.original_title}.
             </p>
             <p>
               <strong>Duração: </strong>
-              {timeFormat(film.runtime)}{" "}
+              {timeFormat(film.runtime)}.
             </p>
           </section>
         </div>
