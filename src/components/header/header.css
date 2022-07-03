@@ -36,6 +36,11 @@ nav {
   margin: 0 auto;
 }
 
+nav .profile {
+  display: flex;
+  float: right;
+}
+
 .profile {
   display: flex;
   align-items: center;
@@ -50,9 +55,8 @@ nav {
   object-fit: cover;
 }
 
-nav .profile {
-  display: flex;
-  float: right;
+.profile span:hover {
+  color: #a9c1f5;
 }
 
 li {
