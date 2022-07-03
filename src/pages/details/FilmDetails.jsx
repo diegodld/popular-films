@@ -13,7 +13,8 @@ export default function FilmDetails() {
     if (id) {
       fetch(`${baseUrl}/${id}?api_key=${apiKey}&language=pt-BR`)
         .then((response) => response.json())
-        .then((data) => setfilm(data));
+        .then((data) => setfilm(data))
+        .catch((error) => alert(error));
     }
   }, []);
 

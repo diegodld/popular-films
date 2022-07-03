@@ -10,7 +10,8 @@ export default function popularFilms() {
   React.useEffect(() => {
     fetch(`${baseUrl}/popular?api_key=${apiKey}&&language=pt-BR&page=${page}`)
       .then((response) => response.json())
-      .then((data) => setFilms(data));
+      .then((data) => setFilms(data))
+      .catch((error) => alert(error));
   }, [page]);
 
   if (!films) return null;

@@ -16,7 +16,8 @@ export default function Slider() {
   React.useEffect(() => {
     axios
       .get(`${baseUrl}/popular?api_key=${apiKey}&&language=pt-BR&page=1`)
-      .then((response) => setFilms(response.data));
+      .then((response) => setFilms(response.data))
+      .catch((error) => alert(error));
   }, []);
 
   if (films) {
