@@ -23,4 +23,4 @@ const dateFormat = (date) => {
   return `${formatUnit(day)} de ${months[month]} de ${year}`;
 };
 
-export { dateFormat };
+export { dateFormat, formatUnit };

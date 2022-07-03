@@ -18,7 +18,7 @@
   object-fit: cover;
 }
 
-.details {
+.details-container {
   margin: 0 auto;
   flex-grow: 1;
   text-align: left;
@@ -28,10 +28,10 @@
   padding: 0.25rem;
 }
 
-.details section {
+.details-container section {
   margin-top: 1rem;
 }
 
-.details h1 {
+.details-container h1 {
   font-size: 1.5rem;
 }
