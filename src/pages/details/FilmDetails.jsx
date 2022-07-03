@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { baseLargeImgUrl, baseUrl, apiKey } from "../../utils/ApiUrl";
-import "./filmDetails.css";
+import "./details.css";
 
 export default function FilmDetails() {
   const { id } = useParams();
