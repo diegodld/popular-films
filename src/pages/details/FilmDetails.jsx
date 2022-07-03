@@ -18,7 +18,8 @@ export default function FilmDetails() {
   }, []);
 
   if (!film) return null;
-  console.log(film);
+  document.title = `${film.title}`;
+
   return (
     <div className="poster-container">
       <div className="poster">
