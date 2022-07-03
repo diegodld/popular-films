@@ -9,7 +9,7 @@ export default function FilmDetails() {
 
   React.useEffect(() => {
     if (id) {
-      fetch(`${baseUrl}${id}?api_key=${apiKey}&language=pt-BR`)
+      fetch(`${baseUrl}/${id}?api_key=${apiKey}&language=pt-BR`)
         .then((response) => response.json())
         .then((data) => setfilm(data));
     }

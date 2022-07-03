@@ -1,6 +1,6 @@
 import React from "react";
 import FilmList from "../../list/FilmList";
-import { apiKey, baseImgUrl, baseUrl } from "../../../utils/ApiUrl";
+import { apiKey, baseMediumImgUrl, baseUrl } from "../../../utils/ApiUrl";
 import "./style.css";
 
 export default function popularFilms() {
@@ -8,7 +8,7 @@ export default function popularFilms() {
   const [page, setPage] = React.useState(1);
 
   React.useEffect(() => {
-    fetch(`${baseUrl}popular?api_key=${apiKey}&language=pt-BR&page=${page}`)
+    fetch(`${baseUrl}/popular?api_key=${apiKey}&&language=pt-BR&page=${page}`)
       .then((response) => response.json())
       .then((data) => setFilms(data));
   }, [page]);
@@ -24,7 +24,7 @@ export default function popularFilms() {
             key={film.id}
             id={film.id}
             title={film.title}
-            image={`${baseImgUrl + film.poster_path}`}
+            image={`${baseMediumImgUrl + film.poster_path}`}
           />
         ))}
       </div>
