@@ -1,5 +1,5 @@
 # Popular films
-Site com catálogo de filmes ordenados por Popularidade.
+Site com catálogo de filmes ordenados por Popularidade.<br>
 Os filmes são carregados através do consumo de uma API.
 
 ## Preview
@@ -23,4 +23,7 @@ Os filmes são carregados através do consumo de uma API.
 + Swiper
 + React icons
 
+### Link
+
+Acesso: https://popular-films.vercel.app/
 
