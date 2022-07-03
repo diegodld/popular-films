@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -45,7 +46,9 @@ export default function Slider() {
         >
           {films["results"].map((film) => (
             <SwiperSlide key={film.id}>
-              <img src={`${baseMediumImgUrl + film.poster_path}`} />
+              <Link to={`/movie/${film.id}`}>
+                <img src={`${baseMediumImgUrl + film.poster_path}`} />
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>
