@@ -24,10 +24,11 @@ export default function Header() {
     <header className={`${scroll > 0 ? "header scroll" : "header"}`}>
       <nav>
         <ul className="header-ul">
-          <BiMoviePlay
-            size={20}
-            style={{ color: "white", marginLeft: "1rem" }}
-          />
+          <li className="logo">
+            <Link to="/">
+              <BiMoviePlay />
+            </Link>
+          </li>
           <li>
             <Link to="/">
               <BiHome style={icon} />
@@ -47,7 +48,7 @@ export default function Header() {
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#films">
               <BiFilm style={icon} />
               <span>Filmes</span>
             </a>

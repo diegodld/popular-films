@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./list.css";
 
-export default function FilmList({ title, description, image, id }) {
+export default function FilmList({ title, image, id }) {
   return (
     <div className="items">
       <Link to={`/movie/${id}`}>

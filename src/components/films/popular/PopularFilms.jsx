@@ -18,7 +18,7 @@ export default function popularFilms() {
   return (
     <>
       <h1 style={{ color: "white" }}>Filmes Populares</h1>
-      <div className="films-container">
+      <div className="films-container" id="films">
         {films["results"].map((film) => (
           <FilmList
             key={film.id}
@@ -32,8 +32,9 @@ export default function popularFilms() {
         <p style={{ color: "white" }}>Página {page}</p>
         <button
           onClick={() => {
-            setPage(page == 1 ? page : page - 1);
+            setPage(page - 1);
           }}
+          disabled={page === 1}
         >
           Anterior
         </button>

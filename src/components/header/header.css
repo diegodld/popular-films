@@ -18,12 +18,15 @@
   margin-left: 0;
 }
 
+.header-ul .logo svg {
+  font-size: 1.5rem;
+}
+
 nav {
   max-width: 1600px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 0.5rem;
   flex-grow: 1;
   margin: 0 auto;
 }
@@ -67,6 +70,9 @@ span {
 @media screen and (max-width: 660px) {
   .header-ul a span {
     display: none;
+  }
+  .header-ul svg {
+    font-size: 1.5rem;
   }
   .profile span {
     display: none;
